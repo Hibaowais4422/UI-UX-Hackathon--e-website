@@ -98,7 +98,6 @@ export default function Home() {
         <div className="flex items-center mb-2 space-x-2">
           <span className="text-[#111C85] font-bold text-md mr-2">$26.00</span>
           <span className="text-[#FF2AAA] line-through">$52.00</span>
-        {/* </div> */}
 
         {/* Rating */}
         <div className="flex">

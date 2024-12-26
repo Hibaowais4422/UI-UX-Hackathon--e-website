@@ -1,4 +1,3 @@
-
 import Image from 'next/image';
 import TopBar from '../components/topbar'
 import  BrandLogos from '../components/brand'
