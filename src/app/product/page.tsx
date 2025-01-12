@@ -4,6 +4,8 @@ import  Footer from '../components/footer'
 import Link from 'next/link';
 import React from 'react';
 import Image from 'next/image';
+import { LayoutGrid, List } from "lucide-react";
+
 
 const products = [
   {
@@ -108,8 +110,8 @@ export default function ProductsPage() {
         </div>
       </div>
       <div className='bg-white w-[#1171]'>
-        <div className="container mx-auto px-4 py-4">
-      <div className=" bg-white max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="container mx-auto  py-8">
+      {/* <div className=" bg-white max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <h1 className="text-2xl font-bold text-gray-800 py-6">Ecommerce Accessories & Fashion Items</h1>
         
         <div className="flex justify-end items-end mb-6 bg-white px-56 gap-10 ">
@@ -135,7 +137,48 @@ export default function ProductsPage() {
 
          
           </div>
+        </div> */}
+           <div className="mb-20">
+          <h1 className="text-xl font-bold text-indigo-800">
+            Ecommerce Accesories & Fashion item
+          </h1>
+          <p className="text-[#8A8FB9]">About 9,620 results (0.62 seconds)</p>
+         {/* </div> */}
+
+        {/* Filters */}
+        <div className=" flex justify-end items-end -mt-10 space-x-4 text-md ml-10">
+          <div>
+            <label className=" text-[#3F509E]">Per Page:</label>
+            <input
+              type="number"
+              className="border rounded px-2 py-1 w-20"
+            />
+          </div>
+          <div>
+            <label className="mr-2 text-[#3F509E]">Sort By:</label>
+            <select className="border rounded px- py-1">
+              <option className="text-[#8A8FB9]">Best Match</option>
+              <option>Price: Low to High</option>
+              <option>Price: High to Low</option>
+            </select>
+          </div>
+       
+          <div className="flex items-center space-x-4 ">
+      <span className="text-[#3F509E]">View:</span>
+      <button className="text-[#151875] hover:text-blue-900">
+        <LayoutGrid size={20} />
+      </button>
+      <button className="text-[#151875] hover:text-blue-700">
+        <List size={20} />
+      </button>
+      <input
+              type="number"
+              className="border rounded px-1 py-1 w-28"
+            />
+    </div>
         </div>
+        </div>
+
 
 
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-6 bg-white">
@@ -146,9 +189,9 @@ export default function ProductsPage() {
               <Image
                 src={product.image}
                 alt={product.name}
-                width={300}
-                height={300}
-                className=" h-42 w-42 pl-10  object-cover group-hover:scale-105 transition"
+                width={200}
+                height={200}
+                className=" w-full h-40 object-contain mx-auto  group-hover:scale-105 transition"
               />
               <div className="p-4 bg-white">
                 <h2 className="text-lg font-semibold text-[#151875]">{product.name}</h2>

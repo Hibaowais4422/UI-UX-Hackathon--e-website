@@ -25,12 +25,12 @@ export default function Home() {
     <div className="bg-white py-10 p-6 ml-16 mt-1 ">
       <div className="max-w-8xl mx-auto sm:px-6 lg:px-8">
         {/* Header Section */}
-        <div className="mb-8 ">
+      <div className="mb-8 ">
           <h1 className="text-xl font-bold text-indigo-800">
             Ecommerce Accesories & Fashion item
           </h1>
           <p className="text-[#8A8FB9]">About 9,620 results (0.62 seconds)</p>
-        {/* </div> */}
+         {/* </div> */}
 
         {/* Filters */}
         <div className=" flex justify-end items-end -mt-10 space-x-2 text-sm">

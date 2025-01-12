@@ -16,23 +16,23 @@ export default function BlogPage() {
           <div className="flex items-center space-x-2 text-sm">
             <Link href="/" className="text-[#0D0E43]">Home</Link>
             <span className="text-[#0D0E43]">.</span>
-            <Link href="/pages" className="text-[#0D0E43]">Pages</Link>
+            <Link href="/404found" className="text-[#0D0E43]">Pages</Link>
             <span className="text-[#FB2E86]">Shop List</span>
           </div>
         </div>
       </div>
-      <div className="flex flex-col lg:flex-row gap-10 p-6 mt-20 mb-32 bg-white  px-28 pl-32">
+      <div className="flex flex-col lg:flex-row gap-10 p-5  bg-white pl-32 mb-20">
 
         {/* Blog Posts Section */}
-        <div className="lg:w-1/2  space-y-8 ">
+        <div className=" space-y-8 ">
           {/* Blog Post 1 */}
-          <div className="bg-white rounded-lg shadow-md">
+          <div className="bg-white rounded-lg shadow-md ">
             <Image
               src="/1 (1).png"
               alt="Blog Image 1"
-              width={400}
+              width={600}
               height={200}
-              className="w-[970px] h-[253px]  object-cover rounded-t-lg"
+              className="w-[970px] h-[453px]  object-cover rounded-t-lg"
             />
             <div className="p-6">
               <div className="flex justify-between text-gray-500 text-sm">
@@ -46,7 +46,7 @@ export default function BlogPage() {
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi
                 lacus auctor interdum porttitor, eleifend volutpat...
               </p>
-              <a href="#" className="text-pink-600 mt-4 inline-block font-semibold">
+              <a href="/blog2" className="text-pink-600 mt-4 inline-block font-semibold">
                 Read More &raquo;
               </a>
             </div>
@@ -59,7 +59,7 @@ export default function BlogPage() {
               alt="Blog Image 2"
               width={400}
               height={400}
-              className="w-[970px] h-[253px] object-cover rounded-t-lg"
+              className="w-[970px] h-[453px] object-cover rounded-t-lg"
             />
             <div className="p-6">
               <div className="flex justify-between text-gray-500 text-sm">
@@ -73,7 +73,7 @@ export default function BlogPage() {
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi
                 lacus auctor interdum porttitor, eleifend volutpat...
               </p>
-              <a href="#" className="text-pink-600 mt-4 inline-block font-semibold">
+              <a href="/blog2" className="text-pink-600 mt-4 inline-block font-semibold">
                 Read More &raquo;
               </a>
             </div>
@@ -84,9 +84,9 @@ export default function BlogPage() {
             <Image
               src="/1 (3).png"
               alt="Blog Image 3"
-              width={400}
+              width={500}
               height={400}
-              className="w-[970px] h-[253px] object-cover rounded-t-lg"
+              className="w-[970px] h-[453px] object-cover rounded-t-lg"
             />
             <div className="p-6">
               <div className="flex justify-between text-gray-500 text-sm">
@@ -100,7 +100,7 @@ export default function BlogPage() {
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi
                 lacus auctor interdum porttitor, eleifend volutpat...
               </p>
-              <a href="#" className="text-pink-600 mt-4 inline-block font-semibold">
+              <a href="/blog2" className="text-pink-600 mt-4 inline-block font-semibold">
                 Read More &raquo;
               </a>
             </div>
@@ -109,7 +109,7 @@ export default function BlogPage() {
   
         {/* Sidebar Section */}
         
-        <div className="lg:w-1/4 w-80 space-y-6 ">
+        <div className=" space-y-6 pr-32">
           {/* Search */}
           <div className="bg-white p-4 ">
             <h2 className="font-bold text-lg mb-2">Search</h2>
@@ -144,19 +144,8 @@ export default function BlogPage() {
     </button>
   </div>
  </div>
-
-  
           {/* Recent Post */}
-          {/* <div className="bg-white p-4 rounded-lg shadow">
-            <h2 className="font-bold text-lg mb-3">Recent Post</h2>
-            <ul className="space-y-2 text-blue-600">
-              <li>✍ How to live a happy life</li>
-              <li>✍ Best travel destinations</li>
-              <li>✍ 5 tips for a healthy mind</li>
-            </ul>
-          </div> */}
-          {/* Recent Post */}
- <div className="mb-6">
+ <div className="mb-6 p-4">
   <h3 className="font-bold text-xl mb-4 text-blue-900">Recent Post</h3>
   <div className="space-y-4">
     {/* Post Item */}
@@ -231,7 +220,7 @@ export default function BlogPage() {
 
   
           {/* Sale Product */}
-          <div className="mb-6">
+          <div className="mb-6 p-4">
   <h3 className="font-bold text-xl mb-4 text-blue-900">Recent Post</h3>
   <div className="space-y-4">
           <div className="flex items-center space-x-4">
@@ -284,7 +273,7 @@ export default function BlogPage() {
          
   
             {/* Offer Product Section */}
-<div className="mb-2 w-[267px] h-[282px]">
+<div className="mb-2 w-[267px] h-[282px] p-4">
   <h2 className="font-bold text-2xl text-blue-900 mb-6">Offer product</h2>
   
   <div className="grid grid-cols-2 gap-6">
@@ -356,9 +345,9 @@ export default function BlogPage() {
       />
                </div>
           </div> */} 
-              <div className="pb-4 pt-28">
+              <div className="p-4 pt-40">
       {/* Social Follow Section */}
-      <div className="mb-2 w-[126px] h-[78px]">
+      <div className="mb-2 w-[126px] h-[78px] p-4">
         <h3 className="text-2xl font-bold text-indigo-900">Follow</h3>
         <div className="flex items-center space-x-4 mt-4">
           <a
@@ -383,7 +372,7 @@ export default function BlogPage() {
       </div>
 
       {/* Tags Section */}
-      <div className='w-[227px] h-[104px] pt-10 '>
+      <div className='w-[227px] h-[104px] pt-10 p-4'>
         <h1 className="text-2xl font-bold text-indigo-900 mb-4">Tags</h1>
         <div className="flex flex-wrap mt-4 space-x-4">
           <a

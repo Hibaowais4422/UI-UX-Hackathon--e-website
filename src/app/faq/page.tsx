@@ -16,7 +16,7 @@ const page = () => {
           <div className="flex items-center space-x-2 text-sm">
             <Link href="/" className="text-[#0D0E43]">Home</Link>
             <span className="text-[#0D0E43]">.</span>
-            <Link href="/pages" className="text-[#0D0E43]">Pages</Link>
+            <Link href="/404found" className="text-[#0D0E43]">Pages</Link>
             <span className="text-[#FB2E86]">.</span>
 
             <span className="text-[#FB2E86]">Faq</span>

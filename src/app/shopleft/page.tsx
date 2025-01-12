@@ -3,7 +3,9 @@ import {  ShoppingCart, Heart, Search ,CheckSquare2Icon } from "lucide-react";
 
 export default function ProductPage() {
     return (
+    <div>
       <div className="grid grid-col lg:grid-col gap-2 p-6 bg-gray-50">
+        
         {/* Sidebar Section */}
         <div className="lg:w-1/4 w-full space-y-8 mt-8">
         
@@ -201,6 +203,7 @@ export default function ProductPage() {
 
         </div>
         </div>
+    </div>
     </div>
     )
 }
